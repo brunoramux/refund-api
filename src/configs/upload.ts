@@ -3,7 +3,7 @@ import path from "node:path"
 import crypto from "node:crypto"
 
 const TMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp")
-const UPLOADS_FOLDER = path.relative(TMP_FOLDER, "folders")
+const UPLOADS_FOLDER = path.join(TMP_FOLDER, "uploads")
 
 const MAX_FILE_SIZE = 1024 * 1014 * 3
 const ACCEPTED_IMAGE_TYPE = ["image/jpeg", "image/jpg", "image/png"]
